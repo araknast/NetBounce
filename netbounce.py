@@ -190,7 +190,7 @@ while 1:
 #    print(data)
     if state == "NORMAL":
         if data == b"GIVE NAME\r\n":
-            player_name = input("What is your name? ")  # TODO: make these dialouge boxes
+            player_name = input("What is your name? ")  # TODO: make these dialogue boxes
             socket.send(bytes(player_name + "\r\n", "utf-8"))
             continue
         elif data == b"NEED MORE PLAYERS\r\n":
